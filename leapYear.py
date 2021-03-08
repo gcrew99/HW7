@@ -7,7 +7,10 @@ def leapYear(leapStr):
   leapNum = int(leapStr)
   if (leapNum % 4) == 0:
     if(leapNum%100) == 0:
-      string ="Not a Leap Year"
+      if(leapNum%400) == 0:
+        print("Leap Year")
+      else:
+        print("Not Leap Year")
     else:
       string ="Leap Year"
   else:
