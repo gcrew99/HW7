@@ -1,9 +1,13 @@
+
+
 def fizzBuzz(x):
       string = ""
       for i in range(x):
         i = i +1
         if (i%3 == 0): 
           string = string + "Fizz,"
+        elif(i%5 == 0):
+          string = string + "Buzz,"
         else:
             i_str = str(i)
             string = string + i_str + ","
