@@ -1,10 +1,11 @@
 
-
 def fizzBuzz(x):
       string = ""
       for i in range(x):
         i = i +1
-        if (i%3 == 0): 
+        if((i%3 == 0) and (i%5 == 0)):
+          string = string + "FizzBuzz"
+        elif (i%3 == 0): 
           string = string + "Fizz,"
         elif(i%5 == 0):
           string = string + "Buzz,"
